@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="chatKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JS0-rN-duc">
+                                <rect key="frame" x="0.0" y="194" width="736" height="220"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Iy9-7O-2bU">
+                                        <rect key="frame" x="4" y="4" width="80" height="212"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="que-Ak-rRR">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                                                <state key="normal" image="Voice"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd2-G1-hhZ">
+                                                <rect key="frame" x="0.0" y="54" width="80" height="50"/>
+                                                <state key="normal" title="⮐">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znJ-jc-9xD">
+                                                <rect key="frame" x="0.0" y="108" width="80" height="50"/>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title=",">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urF-CM-RC9">
+                                                <rect key="frame" x="0.0" y="162" width="80" height="50"/>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="🌐">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="6Dt-gp-6Bm"/>
+                                            <constraint firstAttribute="width" constant="80" id="DcT-ws-r73"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6Dt-gp-6Bm"/>
+                                                <exclude reference="DcT-ws-r73"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="6Dt-gp-6Bm"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="DcT-ws-r73"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5s-H8-Fsm">
+                                        <rect key="frame" x="88" y="4" width="560" height="212"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jep-Ya-oPF">
+                                                <rect key="frame" x="4" y="12" width="552" height="43"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wci-Bg-4tZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50.666666666666657" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="Q"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hya-3O-Frt">
+                                                        <rect key="frame" x="55.666666666666657" y="0.0" width="50.666666666666686" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="W"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp8-k3-t0x">
+                                                        <rect key="frame" x="111.33333333333336" y="0.0" width="50.666666666666643" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="E"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgZ-oW-g3b">
+                                                        <rect key="frame" x="167" y="0.0" width="50.666666666666686" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="R"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1L-uj-42A">
+                                                        <rect key="frame" x="222.66666666666669" y="0.0" width="51" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="T"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akv-I0-gA1">
+                                                        <rect key="frame" x="278.66666666666669" y="0.0" width="50.666666666666629" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="Y"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qi0-Wt-UT5">
+                                                        <rect key="frame" x="334.33333333333326" y="0.0" width="50.666666666666686" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="U"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgR-Gc-ULD">
+                                                        <rect key="frame" x="390" y="0.0" width="50.666666666666629" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="I"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz0-Wv-hwA">
+                                                        <rect key="frame" x="445.66666666666663" y="0.0" width="50.666666666666742" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="O"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oa-0i-5sX">
+                                                        <rect key="frame" x="501.33333333333343" y="0.0" width="50.666666666666572" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="P"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UV2-JJ-kyR">
+                                                <rect key="frame" x="4" y="67" width="538" height="43"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZK-8J-orm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55.333333333333343" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="A"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZX-sa-qfI" userLabel="W">
+                                                        <rect key="frame" x="60.333333333333343" y="0.0" width="55.333333333333314" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="S"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAr-kO-X0m">
+                                                        <rect key="frame" x="120.66666666666664" y="0.0" width="55.333333333333357" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="D"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XS3-Mh-Cgp">
+                                                        <rect key="frame" x="181" y="0.0" width="55.333333333333314" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="F"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJD-oO-RSi">
+                                                        <rect key="frame" x="241.33333333333331" y="0.0" width="55.333333333333371" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="G"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rZ-7Y-lgv">
+                                                        <rect key="frame" x="301.66666666666674" y="0.0" width="55.333333333333314" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="H"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAZ-kp-k20">
+                                                        <rect key="frame" x="362" y="0.0" width="55.333333333333314" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="J"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzA-2u-adh">
+                                                        <rect key="frame" x="422.33333333333337" y="0.0" width="55.333333333333258" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="K"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjO-0m-mji">
+                                                        <rect key="frame" x="482.66666666666663" y="0.0" width="55.333333333333371" height="43"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="L"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="wZ8-cE-cpX">
+                                                <rect key="frame" x="4" y="122" width="552" height="43"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rio-Cy-5qp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="63.333333333333343" height="43"/>
+                                                        <state key="normal" image="Shift"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9fQ-vR-vt5">
+                                                        <rect key="frame" x="77.333333333333371" y="0.0" width="383" height="43"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzt-OW-7GB">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50.333333333333314" height="43"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="Z"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-ud-QLb">
+                                                                <rect key="frame" x="55.333333333333314" y="0.0" width="50.666666666666657" height="43"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="X"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngj-fm-S4d">
+                                                                <rect key="frame" x="110.99999999999997" y="0.0" width="50.333333333333371" height="43"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="C"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5A-Eh-LU4">
+                                                                <rect key="frame" x="166.33333333333334" y="0.0" width="50.333333333333314" height="43"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="V"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr9-Zo-jfL">
+                                                                <rect key="frame" x="221.66666666666666" y="0.0" width="50.666666666666714" height="43"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="B"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1O-5w-ZbR">
+                                                                <rect key="frame" x="277.33333333333337" y="0.0" width="50.333333333333314" height="43"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="N"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqG-Cy-6Ge">
+                                                                <rect key="frame" x="332.66666666666663" y="0.0" width="50.333333333333371" height="43"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="M"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VY-7K-ooY">
+                                                        <rect key="frame" x="474.33333333333343" y="0.0" width="77.666666666666572" height="43"/>
+                                                        <state key="normal" image="Delete"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0vz-Ad-Gjj">
+                                                <rect key="frame" x="4" y="177" width="552" height="31"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Dt0-pc-Sqk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="186.66666666666669" height="31"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXs-G7-jhc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333343" height="31"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="123"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSE-N4-D3M">
+                                                                <rect key="frame" x="66.333333333333343" y="0.0" width="63.666666666666657" height="31"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="Emoji"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfS-gN-Tw8">
+                                                                <rect key="frame" x="134" y="0.0" width="52.666666666666686" height="31"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="Voice"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dry-3X-krh">
+                                                        <rect key="frame" x="190.66666666666671" y="0.0" width="361.33333333333326" height="31"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsj-oe-6l4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="221" height="31"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="Space"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMR-a9-pIT">
+                                                                <rect key="frame" x="224.99999999999997" y="0.0" width="136.33333333333329" height="31"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="Return"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </variation>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="wZ8-cE-cpX" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="4Px-Ae-Ag1"/>
+                                            <constraint firstAttribute="trailing" secondItem="UV2-JJ-kyR" secondAttribute="trailing" constant="4" id="6y4-G6-4WH"/>
+                                            <constraint firstItem="UV2-JJ-kyR" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="18" id="7EP-rV-QfR"/>
+                                            <constraint firstItem="UV2-JJ-kyR" firstAttribute="top" secondItem="jep-Ya-oPF" secondAttribute="bottom" constant="12" id="7zw-j5-vpU"/>
+                                            <constraint firstAttribute="trailing" secondItem="0vz-Ad-Gjj" secondAttribute="trailing" constant="4" id="80U-Wy-KqM"/>
+                                            <constraint firstAttribute="trailing" secondItem="wZ8-cE-cpX" secondAttribute="trailing" constant="4" id="9Gm-IA-mJ9"/>
+                                            <constraint firstItem="0vz-Ad-Gjj" firstAttribute="top" secondItem="wZ8-cE-cpX" secondAttribute="bottom" constant="12" id="AxD-xO-OJu"/>
+                                            <constraint firstItem="UV2-JJ-kyR" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="CBc-T8-UKy"/>
+                                            <constraint firstItem="wZ8-cE-cpX" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="CX0-yh-QsC"/>
+                                            <constraint firstAttribute="bottom" secondItem="0vz-Ad-Gjj" secondAttribute="bottom" constant="4" id="DBw-11-7Uq"/>
+                                            <constraint firstItem="jep-Ya-oPF" firstAttribute="top" secondItem="w5s-H8-Fsm" secondAttribute="top" constant="4" id="DCs-Vb-b4m"/>
+                                            <constraint firstItem="jep-Ya-oPF" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="FDB-cS-K24"/>
+                                            <constraint firstAttribute="bottom" secondItem="0vz-Ad-Gjj" secondAttribute="bottom" constant="4" id="KGq-ri-ceY"/>
+                                            <constraint firstAttribute="trailing" secondItem="0vz-Ad-Gjj" secondAttribute="trailing" constant="4" id="L0k-Yq-NPH"/>
+                                            <constraint firstItem="jep-Ya-oPF" firstAttribute="top" secondItem="w5s-H8-Fsm" secondAttribute="top" constant="4" id="LgQ-Jh-oq1"/>
+                                            <constraint firstItem="0vz-Ad-Gjj" firstAttribute="top" secondItem="wZ8-cE-cpX" secondAttribute="bottom" constant="12" id="Osm-SZ-ks3"/>
+                                            <constraint firstAttribute="trailing" secondItem="jep-Ya-oPF" secondAttribute="trailing" constant="4" id="PRI-90-9Dd"/>
+                                            <constraint firstAttribute="trailing" secondItem="UV2-JJ-kyR" secondAttribute="trailing" constant="4" id="Q48-ZT-orY"/>
+                                            <constraint firstItem="wZ8-cE-cpX" firstAttribute="top" secondItem="UV2-JJ-kyR" secondAttribute="bottom" constant="12" id="Qc4-u6-ssO"/>
+                                            <constraint firstItem="0vz-Ad-Gjj" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="TUL-eO-JXR"/>
+                                            <constraint firstItem="0vz-Ad-Gjj" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="UMV-fd-wHa"/>
+                                            <constraint firstAttribute="trailing" secondItem="UV2-JJ-kyR" secondAttribute="trailing" constant="18" id="UYM-Wl-5pu"/>
+                                            <constraint firstItem="wZ8-cE-cpX" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="aP0-Vx-5tx"/>
+                                            <constraint firstItem="jep-Ya-oPF" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="bC6-uW-t1a"/>
+                                            <constraint firstItem="0vz-Ad-Gjj" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="bz5-Cu-PVQ"/>
+                                            <constraint firstItem="0vz-Ad-Gjj" firstAttribute="top" secondItem="wZ8-cE-cpX" secondAttribute="bottom" constant="12" id="c9B-5X-xfl"/>
+                                            <constraint firstAttribute="trailing" secondItem="jep-Ya-oPF" secondAttribute="trailing" constant="4" id="cXf-Vv-lsG"/>
+                                            <constraint firstItem="UV2-JJ-kyR" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="clH-we-FhV"/>
+                                            <constraint firstItem="UV2-JJ-kyR" firstAttribute="top" secondItem="jep-Ya-oPF" secondAttribute="bottom" constant="12" id="doM-6n-6JM"/>
+                                            <constraint firstAttribute="trailing" secondItem="wZ8-cE-cpX" secondAttribute="trailing" constant="4" id="dxt-6V-RKg"/>
+                                            <constraint firstItem="UV2-JJ-kyR" firstAttribute="top" secondItem="jep-Ya-oPF" secondAttribute="bottom" constant="12" id="gnX-ys-7Tz"/>
+                                            <constraint firstItem="wZ8-cE-cpX" firstAttribute="top" secondItem="UV2-JJ-kyR" secondAttribute="bottom" constant="12" id="jJW-yd-ROW"/>
+                                            <constraint firstItem="wZ8-cE-cpX" firstAttribute="top" secondItem="UV2-JJ-kyR" secondAttribute="bottom" constant="12" id="prD-iP-LTB"/>
+                                            <constraint firstItem="jep-Ya-oPF" firstAttribute="top" secondItem="w5s-H8-Fsm" secondAttribute="top" constant="12" id="rDz-w7-Wd8"/>
+                                            <constraint firstAttribute="trailing" secondItem="jep-Ya-oPF" secondAttribute="trailing" constant="4" id="rpr-hL-lgp"/>
+                                            <constraint firstAttribute="bottom" secondItem="0vz-Ad-Gjj" secondAttribute="bottom" constant="4" id="sxo-E8-0Vv"/>
+                                            <constraint firstAttribute="trailing" secondItem="0vz-Ad-Gjj" secondAttribute="trailing" constant="4" id="u8H-MC-7O3"/>
+                                            <constraint firstAttribute="trailing" secondItem="wZ8-cE-cpX" secondAttribute="trailing" constant="4" id="uwu-US-N8u"/>
+                                            <constraint firstItem="jep-Ya-oPF" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="leading" constant="4" id="wYN-rf-BFl"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="DCs-Vb-b4m"/>
+                                                <exclude reference="FDB-cS-K24"/>
+                                                <exclude reference="LgQ-Jh-oq1"/>
+                                                <exclude reference="bC6-uW-t1a"/>
+                                                <exclude reference="cXf-Vv-lsG"/>
+                                                <exclude reference="rpr-hL-lgp"/>
+                                                <exclude reference="6y4-G6-4WH"/>
+                                                <exclude reference="7zw-j5-vpU"/>
+                                                <exclude reference="CBc-T8-UKy"/>
+                                                <exclude reference="Q48-ZT-orY"/>
+                                                <exclude reference="clH-we-FhV"/>
+                                                <exclude reference="gnX-ys-7Tz"/>
+                                                <exclude reference="4Px-Ae-Ag1"/>
+                                                <exclude reference="CX0-yh-QsC"/>
+                                                <exclude reference="dxt-6V-RKg"/>
+                                                <exclude reference="jJW-yd-ROW"/>
+                                                <exclude reference="prD-iP-LTB"/>
+                                                <exclude reference="uwu-US-N8u"/>
+                                                <exclude reference="AxD-xO-OJu"/>
+                                                <exclude reference="DBw-11-7Uq"/>
+                                                <exclude reference="KGq-ri-ceY"/>
+                                                <exclude reference="L0k-Yq-NPH"/>
+                                                <exclude reference="TUL-eO-JXR"/>
+                                                <exclude reference="bz5-Cu-PVQ"/>
+                                                <exclude reference="c9B-5X-xfl"/>
+                                                <exclude reference="u8H-MC-7O3"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="FDB-cS-K24"/>
+                                                <include reference="LgQ-Jh-oq1"/>
+                                                <include reference="cXf-Vv-lsG"/>
+                                                <include reference="CBc-T8-UKy"/>
+                                                <include reference="Q48-ZT-orY"/>
+                                                <include reference="gnX-ys-7Tz"/>
+                                                <include reference="4Px-Ae-Ag1"/>
+                                                <include reference="jJW-yd-ROW"/>
+                                                <include reference="uwu-US-N8u"/>
+                                                <include reference="DBw-11-7Uq"/>
+                                                <include reference="L0k-Yq-NPH"/>
+                                                <include reference="bz5-Cu-PVQ"/>
+                                                <include reference="c9B-5X-xfl"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="DCs-Vb-b4m"/>
+                                                <include reference="bC6-uW-t1a"/>
+                                                <include reference="rpr-hL-lgp"/>
+                                                <include reference="6y4-G6-4WH"/>
+                                                <include reference="7zw-j5-vpU"/>
+                                                <include reference="clH-we-FhV"/>
+                                                <include reference="CX0-yh-QsC"/>
+                                                <include reference="dxt-6V-RKg"/>
+                                                <include reference="prD-iP-LTB"/>
+                                                <include reference="AxD-xO-OJu"/>
+                                                <include reference="KGq-ri-ceY"/>
+                                                <include reference="TUL-eO-JXR"/>
+                                                <include reference="u8H-MC-7O3"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                        </variation>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="a23-Ts-THx">
+                                        <rect key="frame" x="652" y="4" width="80" height="212"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvR-5I-SlR">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="&lt;">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7py-fz-Bmp">
+                                                <rect key="frame" x="0.0" y="54" width="80" height="50"/>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="&gt;">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxz-lr-C21">
+                                                <rect key="frame" x="0.0" y="108" width="80" height="50"/>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title=".">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bk-rl-vCR">
+                                                <rect key="frame" x="0.0" y="162" width="80" height="50"/>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="ৎ">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="eE3-RI-sYf"/>
+                                            <constraint firstAttribute="width" constant="75" id="jcW-Lg-qTz"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="eE3-RI-sYf"/>
+                                                <exclude reference="jcW-Lg-qTz"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="jcW-Lg-qTz"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="eE3-RI-sYf"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="a23-Ts-THx" secondAttribute="trailing" constant="4" id="0cn-sc-EdF"/>
+                                    <constraint firstItem="a23-Ts-THx" firstAttribute="top" secondItem="JS0-rN-duc" secondAttribute="top" constant="4" id="5bB-5H-Wag"/>
+                                    <constraint firstItem="Iy9-7O-2bU" firstAttribute="leading" secondItem="JS0-rN-duc" secondAttribute="leading" constant="4" id="5ki-qk-sXb"/>
+                                    <constraint firstAttribute="height" constant="226" id="7vG-1n-Cet"/>
+                                    <constraint firstItem="a23-Ts-THx" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="trailing" constant="4" id="B7Q-Se-rVP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Iy9-7O-2bU" secondAttribute="bottom" constant="4" id="F30-Ax-ljl"/>
+                                    <constraint firstItem="w5s-H8-Fsm" firstAttribute="top" secondItem="JS0-rN-duc" secondAttribute="top" id="FEt-2l-uYl"/>
+                                    <constraint firstAttribute="trailing" secondItem="w5s-H8-Fsm" secondAttribute="trailing" id="Fys-6h-PEh"/>
+                                    <constraint firstAttribute="height" constant="220" id="Fzy-2a-aOT"/>
+                                    <constraint firstAttribute="trailing" secondItem="a23-Ts-THx" secondAttribute="trailing" constant="4" id="HqE-U0-lqJ"/>
+                                    <constraint firstItem="Iy9-7O-2bU" firstAttribute="top" secondItem="JS0-rN-duc" secondAttribute="top" constant="4" id="Kbc-rE-eru"/>
+                                    <constraint firstItem="a23-Ts-THx" firstAttribute="leading" secondItem="w5s-H8-Fsm" secondAttribute="trailing" constant="4" id="RFQ-zV-Fyx"/>
+                                    <constraint firstAttribute="bottom" secondItem="w5s-H8-Fsm" secondAttribute="bottom" id="RKE-qQ-ieS"/>
+                                    <constraint firstItem="w5s-H8-Fsm" firstAttribute="top" secondItem="JS0-rN-duc" secondAttribute="top" constant="4" id="VQI-dq-fIy"/>
+                                    <constraint firstAttribute="bottom" secondItem="w5s-H8-Fsm" secondAttribute="bottom" constant="4" id="VnA-zu-Oq5"/>
+                                    <constraint firstItem="w5s-H8-Fsm" firstAttribute="leading" secondItem="JS0-rN-duc" secondAttribute="leading" id="X1w-kg-VSr"/>
+                                    <constraint firstAttribute="bottom" secondItem="a23-Ts-THx" secondAttribute="bottom" constant="4" id="ajA-C2-Mdv"/>
+                                    <constraint firstAttribute="height" constant="220" id="bpb-Ci-Cws"/>
+                                    <constraint firstItem="w5s-H8-Fsm" firstAttribute="top" secondItem="JS0-rN-duc" secondAttribute="top" constant="4" id="eJB-V1-OdK"/>
+                                    <constraint firstItem="a23-Ts-THx" firstAttribute="top" secondItem="JS0-rN-duc" secondAttribute="top" constant="4" id="eYl-A1-li5"/>
+                                    <constraint firstAttribute="bottom" secondItem="a23-Ts-THx" secondAttribute="bottom" constant="4" id="fsR-Zo-qnu"/>
+                                    <constraint firstItem="w5s-H8-Fsm" firstAttribute="leading" secondItem="Iy9-7O-2bU" secondAttribute="trailing" constant="4" id="gUX-RQ-xfV"/>
+                                    <constraint firstItem="Iy9-7O-2bU" firstAttribute="top" secondItem="JS0-rN-duc" secondAttribute="top" constant="4" id="jN5-Wq-ZAH"/>
+                                    <constraint firstAttribute="bottom" secondItem="Iy9-7O-2bU" secondAttribute="bottom" constant="4" id="mkg-pp-2fb"/>
+                                    <constraint firstItem="w5s-H8-Fsm" firstAttribute="leading" secondItem="Iy9-7O-2bU" secondAttribute="trailing" constant="4" id="pHg-cH-VzZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="w5s-H8-Fsm" secondAttribute="bottom" constant="4" id="skc-TU-VJc"/>
+                                    <constraint firstItem="Iy9-7O-2bU" firstAttribute="leading" secondItem="JS0-rN-duc" secondAttribute="leading" constant="4" id="suY-rZ-nyc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Iy9-7O-2bU"/>
+                                        <exclude reference="a23-Ts-THx"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="7vG-1n-Cet"/>
+                                        <exclude reference="Fzy-2a-aOT"/>
+                                        <exclude reference="bpb-Ci-Cws"/>
+                                        <exclude reference="5ki-qk-sXb"/>
+                                        <exclude reference="F30-Ax-ljl"/>
+                                        <exclude reference="Kbc-rE-eru"/>
+                                        <exclude reference="jN5-Wq-ZAH"/>
+                                        <exclude reference="mkg-pp-2fb"/>
+                                        <exclude reference="suY-rZ-nyc"/>
+                                        <exclude reference="FEt-2l-uYl"/>
+                                        <exclude reference="Fys-6h-PEh"/>
+                                        <exclude reference="RKE-qQ-ieS"/>
+                                        <exclude reference="VQI-dq-fIy"/>
+                                        <exclude reference="VnA-zu-Oq5"/>
+                                        <exclude reference="X1w-kg-VSr"/>
+                                        <exclude reference="eJB-V1-OdK"/>
+                                        <exclude reference="gUX-RQ-xfV"/>
+                                        <exclude reference="pHg-cH-VzZ"/>
+                                        <exclude reference="skc-TU-VJc"/>
+                                        <exclude reference="0cn-sc-EdF"/>
+                                        <exclude reference="5bB-5H-Wag"/>
+                                        <exclude reference="B7Q-Se-rVP"/>
+                                        <exclude reference="HqE-U0-lqJ"/>
+                                        <exclude reference="RFQ-zV-Fyx"/>
+                                        <exclude reference="ajA-C2-Mdv"/>
+                                        <exclude reference="eYl-A1-li5"/>
+                                        <exclude reference="fsR-Zo-qnu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="Iy9-7O-2bU"/>
+                                        <include reference="a23-Ts-THx"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="bpb-Ci-Cws"/>
+                                        <include reference="F30-Ax-ljl"/>
+                                        <include reference="Kbc-rE-eru"/>
+                                        <include reference="suY-rZ-nyc"/>
+                                        <include reference="VQI-dq-fIy"/>
+                                        <include reference="VnA-zu-Oq5"/>
+                                        <include reference="gUX-RQ-xfV"/>
+                                        <include reference="pHg-cH-VzZ"/>
+                                        <include reference="0cn-sc-EdF"/>
+                                        <include reference="5bB-5H-Wag"/>
+                                        <include reference="RFQ-zV-Fyx"/>
+                                        <include reference="fsR-Zo-qnu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="Iy9-7O-2bU"/>
+                                        <include reference="a23-Ts-THx"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="Fzy-2a-aOT"/>
+                                        <include reference="5ki-qk-sXb"/>
+                                        <include reference="jN5-Wq-ZAH"/>
+                                        <include reference="mkg-pp-2fb"/>
+                                        <include reference="eJB-V1-OdK"/>
+                                        <include reference="gUX-RQ-xfV"/>
+                                        <include reference="skc-TU-VJc"/>
+                                        <include reference="B7Q-Se-rVP"/>
+                                        <include reference="HqE-U0-lqJ"/>
+                                        <include reference="ajA-C2-Mdv"/>
+                                        <include reference="eYl-A1-li5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="7vG-1n-Cet"/>
+                                        <include reference="FEt-2l-uYl"/>
+                                        <include reference="Fys-6h-PEh"/>
+                                        <include reference="RKE-qQ-ieS"/>
+                                        <include reference="X1w-kg-VSr"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JS0-rN-duc" secondAttribute="bottom" id="2gw-KX-Uyk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JS0-rN-duc" secondAttribute="bottom" id="GpL-ZD-4D9"/>
+                            <constraint firstAttribute="trailing" secondItem="JS0-rN-duc" secondAttribute="trailing" id="NcT-wT-Jbb"/>
+                            <constraint firstAttribute="trailing" secondItem="JS0-rN-duc" secondAttribute="trailing" id="UEK-2u-eDQ"/>
+                            <constraint firstAttribute="bottom" secondItem="JS0-rN-duc" secondAttribute="bottom" id="bzY-tK-DVH"/>
+                            <constraint firstAttribute="trailing" secondItem="JS0-rN-duc" secondAttribute="trailing" id="eoB-Wc-tuz"/>
+                            <constraint firstItem="JS0-rN-duc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fgf-Zu-PFK"/>
+                            <constraint firstItem="JS0-rN-duc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ggN-KR-pfH"/>
+                            <constraint firstAttribute="left" secondItem="JS0-rN-duc" secondAttribute="left" id="gnf-61-qKT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NcT-wT-Jbb"/>
+                                <exclude reference="UEK-2u-eDQ"/>
+                                <exclude reference="bzY-tK-DVH"/>
+                                <exclude reference="eoB-Wc-tuz"/>
+                                <exclude reference="fgf-Zu-PFK"/>
+                                <exclude reference="ggN-KR-pfH"/>
+                                <exclude reference="gnf-61-qKT"/>
+                                <exclude reference="2gw-KX-Uyk"/>
+                                <exclude reference="GpL-ZD-4D9"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="bzY-tK-DVH"/>
+                                <include reference="eoB-Wc-tuz"/>
+                                <include reference="ggN-KR-pfH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="UEK-2u-eDQ"/>
+                                <include reference="gnf-61-qKT"/>
+                                <include reference="GpL-ZD-4D9"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="NcT-wT-Jbb"/>
+                                <include reference="fgf-Zu-PFK"/>
+                                <include reference="2gw-KX-Uyk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="122.40000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="123" width="41" height="43"/>
+        <image name="A" width="32" height="43"/>
+        <image name="B" width="32" height="43"/>
+        <image name="C" width="32" height="43"/>
+        <image name="D" width="32" height="43"/>
+        <image name="Delete" width="42" height="43"/>
+        <image name="E" width="32" height="43"/>
+        <image name="Emoji" width="42" height="43"/>
+        <image name="F" width="32" height="43"/>
+        <image name="G" width="32" height="43"/>
+        <image name="H" width="32" height="43"/>
+        <image name="I" width="32" height="43"/>
+        <image name="J" width="32" height="43"/>
+        <image name="K" width="32" height="43"/>
+        <image name="L" width="32" height="43"/>
+        <image name="M" width="32" height="43"/>
+        <image name="N" width="32" height="43"/>
+        <image name="O" width="32" height="43"/>
+        <image name="P" width="32" height="43"/>
+        <image name="Q" width="32" height="43"/>
+        <image name="R" width="32" height="43"/>
+        <image name="Return" width="88" height="43"/>
+        <image name="S" width="32" height="43"/>
+        <image name="Shift" width="42" height="43"/>
+        <image name="Space" width="145" height="43"/>
+        <image name="T" width="32" height="43"/>
+        <image name="U" width="32" height="43"/>
+        <image name="V" width="32" height="43"/>
+        <image name="Voice" width="32" height="43"/>
+        <image name="W" width="32" height="43"/>
+        <image name="X" width="32" height="43"/>
+        <image name="Y" width="32" height="43"/>
+        <image name="Z" width="32" height="43"/>
+    </resources>
+</document>
